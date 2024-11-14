@@ -36,7 +36,7 @@ public class Paciente {
         this.direccion = new Direccion(datos.direccion());
     }
 
-    public void atualizarInformacion(DatosActualizacionPaciente datos) {
+    public void actualizarDatos(DatosActualizarPaciente datos) {
         if (datos.nombre() != null)
             this.nombre = datos.nombre();
 
@@ -47,7 +47,7 @@ public class Paciente {
             direccion.actualizarDatos(datos.direccion());
     }
 
-    public void inactivar() {
+    public void desactivarPaciente() {
         this.activo = false;
     }
 
